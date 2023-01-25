@@ -47,7 +47,7 @@ exports.createPages = async ({ graphql, actions }) => {
       }
     }
   `)
-  // Don nothing if error
+  // Do nothing if error
   if (content.error) return
   const allPosts = content.data.posts.edges
   const allPages = content.data.pages.edges
@@ -59,7 +59,7 @@ exports.createPages = async ({ graphql, actions }) => {
         path: node.fields.slug,
         component: path.resolve(`./src/templates/Post.js`),
         context: {
-          // Data passed to context is available in page quries as graphql variables
+          // Data passed to context is available in page queries as graphql variables
           slug: node.fields.slug,
         },
       })
@@ -71,7 +71,7 @@ exports.createPages = async ({ graphql, actions }) => {
       path: node.fields.slug,
       component: path.resolve(`./src/templates/Page.js`),
       context: {
-        // Data passed to context is available in page quries as graphql variables
+        // Data passed to context is available in page queries as graphql variables
         slug: node.fields.slug,
       },
     })

@@ -7,7 +7,7 @@ import HomeBanner from "components/HomeBanner"
 import BlogPostCard from "components/BlogPostCard"
 import PageNavigation from "components/PageNavigation"
 
-const IndexPage = ({ data, pageContext }) => {
+const Home = ({ data, pageContext }) => {
   const posts = data.allMarkdownRemark.edges
 
   return (
@@ -38,7 +38,7 @@ const IndexPage = ({ data, pageContext }) => {
   )
 }
 
-export default IndexPage
+export default Home
 
 export const query = graphql`
   query blogListQuery($skip: Int!, $limit: Int!) {
