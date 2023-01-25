@@ -32,7 +32,7 @@ const sharedStyle = css`
   display: flex;
   align-items: center;
   margin-right: 20px;
-  font-family: "Nunito Black" Arial, Helvetica, sans-serif;
+  font-family: "Nunito Black", Arial, Helvetica, sans-serif;
   font-size: 0.8rem;
   img {
     margin: 0 10px 0 0;

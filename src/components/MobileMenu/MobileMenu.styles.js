@@ -29,7 +29,7 @@ export const Nav = styled.ul`
   top: 100px;
   list-style-type: none;
   padding: 0;
-  font-family: "Nunito Regular" Arial, Helvetica, sans-serif;
+  font-family: "Nunito Regular", Arial, Helvetica, sans-serif;
   font-size: 1.2rem;
   a {
     text-decoration: none;

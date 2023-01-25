@@ -22,5 +22,5 @@ export const ImgWrapper = styled.div`
   height: 30px;
 `
 export const Current = styled.div`
-  font-family: "Nunito Black" Arial, Helvetica, sans-serif;
+  font-family: "Nunito Black", Arial, Helvetica, sans-serif;
 `
